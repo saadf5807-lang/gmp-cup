@@ -1,0 +1,182 @@
+{
+  "date": "Thursday 26 November",
+  "updatedAt": null,
+  "teams": [
+    {
+      "code": "M1",
+      "name": "Hamstrings",
+      "captain": "Albaraa Sindi",
+      "group": "A"
+    },
+    {
+      "code": "M4",
+      "name": "HIVE FC",
+      "captain": "Saad Faisal",
+      "group": "A"
+    },
+    {
+      "code": "M5",
+      "name": "The Geri-Hat-Tricks",
+      "captain": "Saaid Khalid",
+      "group": "A"
+    },
+    {
+      "code": "M2",
+      "name": "RAHEEB",
+      "captain": "Abdulsalam Alata",
+      "group": "B"
+    },
+    {
+      "code": "M3",
+      "name": "M3 Classic XI",
+      "captain": "Mohammed Alsaadawi",
+      "group": "B"
+    },
+    {
+      "code": "DR",
+      "name": "Gold Standard",
+      "captain": "Moustafa Al Sawy",
+      "group": "B"
+    }
+  ],
+  "venues": {
+    "majid": {
+      "en": "Majid",
+      "ar": "ملعب ماجد"
+    },
+    "thaghr": {
+      "en": "Al-Thaghr 1",
+      "ar": "ملعب الثغر ١"
+    },
+    "barca": {
+      "en": "Barcelona 3",
+      "ar": "ملعب برشلونة ٣"
+    }
+  },
+  "matches": [
+    {
+      "id": "g1",
+      "stage": "group",
+      "group": "A",
+      "venue": "majid",
+      "start": "17:00",
+      "end": "17:30",
+      "home": "M4",
+      "away": "M5",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "g2",
+      "stage": "group",
+      "group": "B",
+      "venue": "majid",
+      "start": "17:35",
+      "end": "18:05",
+      "home": "M2",
+      "away": "M3",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "g3",
+      "stage": "group",
+      "group": "A",
+      "venue": "majid",
+      "start": "18:10",
+      "end": "18:40",
+      "home": "M1",
+      "away": "M4",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "g4",
+      "stage": "group",
+      "group": "B",
+      "venue": "thaghr",
+      "start": "19:00",
+      "end": "19:30",
+      "home": "M2",
+      "away": "DR",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "g5",
+      "stage": "group",
+      "group": "A",
+      "venue": "thaghr",
+      "start": "19:35",
+      "end": "20:05",
+      "home": "M1",
+      "away": "M5",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "g6",
+      "stage": "group",
+      "group": "B",
+      "venue": "thaghr",
+      "start": "20:10",
+      "end": "20:40",
+      "home": "M3",
+      "away": "DR",
+      "hs": 0,
+      "as": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "sf1",
+      "stage": "ko",
+      "label": "Semi-final 1",
+      "venue": "barca",
+      "start": "21:00",
+      "end": "21:30",
+      "home": "A1",
+      "away": "B2",
+      "hs": 0,
+      "as": 0,
+      "hp": 0,
+      "ap": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "sf2",
+      "stage": "ko",
+      "label": "Semi-final 2",
+      "venue": "barca",
+      "start": "21:35",
+      "end": "22:05",
+      "home": "B1",
+      "away": "A2",
+      "hs": 0,
+      "as": 0,
+      "hp": 0,
+      "ap": 0,
+      "status": "upcoming"
+    },
+    {
+      "id": "final",
+      "stage": "ko",
+      "label": "Final",
+      "venue": "barca",
+      "start": "22:20",
+      "end": "22:50",
+      "home": "W:sf1",
+      "away": "W:sf2",
+      "hs": 0,
+      "as": 0,
+      "hp": 0,
+      "ap": 0,
+      "status": "upcoming"
+    }
+  ],
+  "updates": []
+}
