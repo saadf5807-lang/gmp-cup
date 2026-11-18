@@ -1,6 +1,7 @@
 (function () {
   var S = null;
   var REFRESH_MS = 60000;
+  var lastTxt = '';
 
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function team(code) { for (var i = 0; i < S.teams.length; i++) if (S.teams[i].code === code) return S.teams[i]; return null; }
@@ -108,8 +109,8 @@
 
   function load() {
     fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
-      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (d) { S = d; render(); })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (txt) { if (txt === lastTxt) return; lastTxt = txt; S = JSON.parse(txt); render(); })
       .catch(function () {
         if (!S) document.querySelector('#app .stamp').textContent = 'Could not load scores. Check your connection and refresh.';
       });

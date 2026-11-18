@@ -4,7 +4,7 @@
   --accent:#1673A8; --on-accent:#FFFFFF; --aware-bg:#DCEEFA; --groupB:#A44A07; --good:#0B6B3A; --chip:#E6E9F3; --on-ink:#F2EFE8;
   --display:"Anton","Impact","Arial Narrow",sans-serif;
   --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --arabic:"Cairo","Noto Sans Arabic",system-ui,sans-serif;
+  --arabic:"SF Arabic","Geeza Pro","Noto Sans Arabic","Segoe UI",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0C1530; --surface:#142049; --ink:#EEF1FA; --muted:#A9B4D6; --line:#2A3765;
