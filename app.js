@@ -87,7 +87,7 @@
     var ko = S.matches.filter(function (m) { return m.stage === 'ko'; });
     var champ = winner(byId('final'));
     var html = '<div class="wrap">';
-    html += '<header class="top"><div class="row eyebrow"><span>BMC Medicine · M1–M5</span><span class="accent">' + esc(S.date) + '</span></div><h1>GMP CUP</h1><div class="row"><span class="eyebrow accent">Live scoreboard</span><span class="stamp">' + (S.updatedAt ? 'Last updated ' + esc(clock(S.updatedAt)) + ' (Riyadh time) · refreshes every minute' : 'No results yet. Scores appear here during the matches.') + '</span></div></header>';
+    html += '<header class="top"><div class="row eyebrow"><span>BMC Medicine · M1–M5</span><span class="accent">' + esc(S.date) + '</span></div><h1>GMP CUP</h1><div class="aware"><svg role="img" aria-label="Prostate cancer awareness ribbon" width="26" height="30" viewBox="0 0 24 28"><path d="M12 1C9 1 7.2 3.4 7.2 6.2c0 2.3 1.2 4.2 2.8 6.4L4 25l3 1.4 5-8.2 5 8.2 3-1.4-6-12.4c1.6-2.2 2.8-4.1 2.8-6.4C16.8 3.4 15 1 12 1zm0 3.2c1.2 0 1.8 1 1.8 2.1 0 1-.6 2.2-1.8 3.8-1.2-1.6-1.8-2.8-1.8-3.8 0-1.1.6-2.1 1.8-2.1z" fill="#3E9AD6"></path></svg><span class="en">Kicking off for prostate cancer awareness</span><span class="ar" dir="rtl" lang="ar">التوعية بسرطان البروستاتا</span></div><div class="row"><span class="eyebrow accent">Live scoreboard</span><span class="stamp">' + (S.updatedAt ? 'Last updated ' + esc(clock(S.updatedAt)) + ' (Riyadh time) · refreshes every minute' : 'No results yet. Scores appear here during the matches.') + '</span></div></header>';
     html += '<section aria-label="Now">' + nowHtml() + '</section>';
     html += '<section><h2>Stage 1 · Groups <small>5:00 – 8:40 PM</small></h2><div class="grid2">';
     ['majid', 'thaghr'].forEach(function (v) {
@@ -102,7 +102,7 @@
     }).join('') + '</div></section>';
     html += '<section><h2>Updates</h2>';
     html += S.updates.length ? '<div class="updates">' + S.updates.map(function (u) { return '<div class="upd"><time>' + esc(clock(u.at)) + '</time><p>' + esc(u.text) + '</p></div>'; }).join('') + '</div>' : '<div class="empty">No updates yet. Delays, venue changes and results will be posted here on match day.</div>';
-    html += '</section><footer>GMP Cup · BMC Medicine inter-batch tournament. Scores refresh automatically every minute.</footer></div>';
+    html += '</section><section><div class="health"><svg role="img" aria-label="Prostate cancer awareness ribbon" width="26" height="30" viewBox="0 0 24 28"><path d="M12 1C9 1 7.2 3.4 7.2 6.2c0 2.3 1.2 4.2 2.8 6.4L4 25l3 1.4 5-8.2 5 8.2 3-1.4-6-12.4c1.6-2.2 2.8-4.1 2.8-6.4C16.8 3.4 15 1 12 1zm0 3.2c1.2 0 1.8 1 1.8 2.1 0 1-.6 2.2-1.8 3.8-1.2-1.6-1.8-2.8-1.8-3.8 0-1.1.6-2.1 1.8-2.1z" fill="#3E9AD6"></path></svg><span>Men 50+, or earlier with a family history: talk to your doctor about prostate screening.</span></div></section><footer>GMP Cup · BMC Medicine inter-batch tournament for Prostate Cancer Awareness Month. Scores refresh automatically every minute.</footer></div>';
     document.getElementById('app').innerHTML = html;
   }
 

@@ -1,17 +1,17 @@
 /* Layout: one reading column — live strip, fixtures, tables, knockouts, captains, updates */
 :root{
   --bg:#F2EFE8; --surface:#FFFFFF; --ink:#14307A; --muted:#4A5880; --line:#C9CFE0;
-  --accent:#C8102E; --groupB:#A44A07; --good:#0B6B3A; --chip:#E6E9F3; --on-ink:#F2EFE8;
+  --accent:#1673A8; --on-accent:#FFFFFF; --aware-bg:#DCEEFA; --groupB:#A44A07; --good:#0B6B3A; --chip:#E6E9F3; --on-ink:#F2EFE8;
   --display:"Anton","Impact","Arial Narrow",sans-serif;
   --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
   --arabic:"Cairo","Noto Sans Arabic",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0C1530; --surface:#142049; --ink:#EEF1FA; --muted:#A9B4D6; --line:#2A3765;
-  --accent:#FF6B7D; --groupB:#F2A33A; --good:#5FD39A; --chip:#1D2A5A; --on-ink:#0C1530; color-scheme:dark}}
+  --accent:#5DB8F0; --on-accent:#0C1530; --aware-bg:#16305A; --groupB:#F2A33A; --good:#5FD39A; --chip:#1D2A5A; --on-ink:#0C1530; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0C1530; --surface:#142049; --ink:#EEF1FA; --muted:#A9B4D6; --line:#2A3765;
-  --accent:#FF6B7D; --groupB:#F2A33A; --good:#5FD39A; --chip:#1D2A5A; --on-ink:#0C1530; color-scheme:dark}
+  --accent:#5DB8F0; --on-accent:#0C1530; --aware-bg:#16305A; --groupB:#F2A33A; --good:#5FD39A; --chip:#1D2A5A; --on-ink:#0C1530; color-scheme:dark}
 body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45}
 .wrap{max-width:980px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:36px}
 h1,h2,h3{margin:0;font-weight:400;font-family:var(--display);text-wrap:balance}
@@ -43,7 +43,7 @@ section>h2 small{font-family:var(--body);font-size:13px;font-weight:600;color:va
 .mhead{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.06em;font-variant-numeric:tabular-nums}
 .tag{color:var(--accent)} .tag.B{color:var(--groupB)} .tag.K{color:var(--ink)}
 .pill{font-size:11px;font-weight:800;letter-spacing:.1em;border-radius:999px;padding:3px 10px;background:var(--chip);color:var(--muted);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.pill.live{background:var(--accent);color:#FFFFFF}
+.pill.live{background:var(--accent);color:var(--on-accent)}
 .pill.ft{background:var(--ink);color:var(--on-ink)}
 .side{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}
 .side .t{display:flex;align-items:baseline;gap:10px;min-width:0;flex-wrap:wrap}
@@ -66,7 +66,7 @@ tr.q td:first-child{box-shadow:inset 4px 0 0 var(--good)}
 td.pts{font-weight:800}
 .note{font-size:13px;color:var(--muted)}
 .ko{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px}
-.champ{background:var(--accent);color:#FFFFFF;border-radius:14px;padding:16px 20px;display:flex;align-items:center;gap:14px}
+.champ{background:var(--accent);color:var(--on-accent);border-radius:14px;padding:16px 20px;display:flex;align-items:center;gap:14px}
 .champ .n{font-family:var(--display);font-size:clamp(30px,7vw,44px);line-height:1}
 .champ svg{flex:none}
 .caps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:12px}
@@ -95,3 +95,9 @@ input.pn{width:4em}
 .compose{display:flex;gap:8px;flex-wrap:wrap}
 .compose input{flex:1 1 240px;min-width:0}
 footer{font-size:13px;color:var(--muted);border-top:3px solid var(--ink);padding-top:12px}
+.aware{background:var(--aware-bg);color:var(--ink);border-radius:12px;padding:10px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:8px}
+.aware .en{flex:1 1 220px;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.aware .ar{font-family:var(--arabic);font-weight:800;font-size:16px}
+.aware svg{flex:none}
+.health{background:var(--aware-bg);border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:center;font-weight:700}
+.health svg{flex:none}
