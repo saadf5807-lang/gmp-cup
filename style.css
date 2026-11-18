@@ -101,3 +101,6 @@ footer{font-size:13px;color:var(--muted);border-top:3px solid var(--ink);padding
 .aware svg{flex:none}
 .health{background:var(--aware-bg);border-radius:12px;padding:14px 16px;display:flex;gap:12px;align-items:center;font-weight:700}
 .health svg{flex:none}
+.venue .vr{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.venue a{font-family:var(--body);font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--on-ink);border:2px solid currentColor;border-radius:999px;padding:4px 10px;text-decoration:none;white-space:nowrap}
+.venue a:hover{background:var(--on-ink);color:var(--ink)}

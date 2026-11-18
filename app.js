@@ -58,7 +58,7 @@
     var pensLine = (m.stage === 'ko' && m.status === 'ft' && m.hs === m.as && (m.hp || m.ap)) ? '<div class="pens">Penalties ' + esc(m.hp || 0) + '–' + esc(m.ap || 0) + '</div>' : '';
     return '<article class="match' + (m.status === 'live' ? ' live' : '') + '"><div class="mhead"><span>' + esc(t12(m.start)) + ' – ' + esc(t12(m.end)) + '</span>' + tag + pill(m) + '</div>' + sideHtml(m, 'h') + sideHtml(m, 'a') + pensLine + '</article>';
   }
-  function venueHtml(key) { var v = S.venues[key]; return '<div class="venue"><b>' + esc(v.en).toUpperCase() + '</b><span dir="rtl" lang="ar">' + esc(v.ar) + '</span></div>'; }
+  function venueHtml(key) { var v = S.venues[key]; var link = v.map ? '<a href="' + esc(v.map) + '" target="_blank" rel="noopener" aria-label="Directions to ' + esc(v.en) + '">Directions ↗</a>' : ''; return '<div class="venue"><b>' + esc(v.en).toUpperCase() + '</b><span class="vr"><span dir="rtl" lang="ar">' + esc(v.ar) + '</span>' + link + '</span></div>'; }
 
   function nowHtml() {
     var champ = winner(byId('final'));

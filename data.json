@@ -42,15 +42,18 @@
   "venues": {
     "majid": {
       "en": "Majid",
-      "ar": "ملعب ماجد"
+      "ar": "ملعب ماجد",
+      "map": "https://maps.app.goo.gl/TanRSpV68LdpYneA8"
     },
     "thaghr": {
       "en": "Al-Thaghr 1",
-      "ar": "ملعب الثغر ١"
+      "ar": "ملعب الثغر ١",
+      "map": "https://maps.app.goo.gl/5iEH5VfjsadzoiLK9"
     },
     "barca": {
       "en": "Barcelona 3",
-      "ar": "ملعب برشلونة ٣"
+      "ar": "ملعب برشلونة ٣",
+      "map": "https://maps.app.goo.gl/e4PD7ySJsVqisYBE8"
     }
   },
   "matches": [
