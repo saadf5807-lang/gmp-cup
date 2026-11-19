@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-19T18:37:37+03:00",
+  "updatedAt": "2026-11-19T18:38:45+03:00",
   "teams": [
     {
       "code": "M1",
@@ -80,8 +80,8 @@
       "home": "M2",
       "away": "M3",
       "hs": 1,
-      "as": 1,
-      "status": "ft"
+      "as": 2,
+      "status": "live"
     },
     {
       "id": "g3",
