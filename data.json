@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-19T18:38:45+03:00",
+  "updatedAt": "2026-11-19T19:29:20+03:00",
   "teams": [
     {
       "code": "M1",
@@ -92,9 +92,9 @@
       "end": "18:40",
       "home": "M1",
       "away": "M4",
-      "hs": 0,
+      "hs": 2,
       "as": 0,
-      "status": "upcoming"
+      "status": "ft"
     },
     {
       "id": "g4",
