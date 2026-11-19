@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-19T19:29:20+03:00",
+  "updatedAt": "2026-11-19T22:37:48+03:00",
   "teams": [
     {
       "code": "M1",
@@ -81,7 +81,7 @@
       "away": "M3",
       "hs": 1,
       "as": 2,
-      "status": "live"
+      "status": "ft"
     },
     {
       "id": "g3",
@@ -107,7 +107,7 @@
       "away": "DR",
       "hs": 0,
       "as": 0,
-      "status": "upcoming"
+      "status": "tbc"
     },
     {
       "id": "g5",
@@ -120,7 +120,7 @@
       "away": "M5",
       "hs": 0,
       "as": 0,
-      "status": "upcoming"
+      "status": "tbc"
     },
     {
       "id": "g6",
@@ -133,7 +133,7 @@
       "away": "DR",
       "hs": 0,
       "as": 0,
-      "status": "upcoming"
+      "status": "tbc"
     },
     {
       "id": "sf1",
@@ -142,13 +142,13 @@
       "venue": "barca",
       "start": "21:00",
       "end": "21:30",
-      "home": "A1",
-      "away": "B2",
-      "hs": 0,
+      "home": "M4",
+      "away": "M2",
+      "hs": 2,
       "as": 0,
       "hp": 0,
       "ap": 0,
-      "status": "upcoming"
+      "status": "ft"
     },
     {
       "id": "sf2",
@@ -157,13 +157,13 @@
       "venue": "barca",
       "start": "21:35",
       "end": "22:05",
-      "home": "B1",
-      "away": "A2",
-      "hs": 0,
+      "home": "M1",
+      "away": "M3",
+      "hs": 2,
       "as": 0,
       "hp": 0,
       "ap": 0,
-      "status": "upcoming"
+      "status": "ft"
     },
     {
       "id": "final",
@@ -178,8 +178,21 @@
       "as": 0,
       "hp": 0,
       "ap": 0,
-      "status": "upcoming"
+      "status": "live"
     }
   ],
-  "updates": []
+  "updates": [
+    {
+      "at": "2026-11-19T22:37:48+03:00",
+      "text": "FINAL is live now at Barcelona 3: M4 HIVE FC vs M1 Hamstrings!"
+    },
+    {
+      "at": "2026-11-19T22:37:48+03:00",
+      "text": "Semi-finals: M4 HIVE FC beat M2 RAHEEB 2–0, and M1 Hamstrings beat M3 Classic XI 2–0."
+    },
+    {
+      "at": "2026-11-19T22:37:48+03:00",
+      "text": "Group stage done: M1 and M4 qualified from Group A, M2 and M3 from Group B. Gold Standard (Doctors) lost 3–0 and are out. Thanks for playing, doctors!"
+    }
+  ]
 }

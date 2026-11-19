@@ -12,7 +12,7 @@
     var rows = S.teams.filter(function (t) { return t.group === g; }).map(function (t) { return { code: t.code, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 }; });
     var by = {}; rows.forEach(function (r) { by[r.code] = r; });
     S.matches.forEach(function (m) {
-      if (m.stage !== 'group' || m.group !== g || m.status === 'upcoming') return;
+      if (m.stage !== 'group' || m.group !== g || m.status === 'upcoming' || m.status === 'tbc') return;
       var h = by[m.home], a = by[m.away]; if (!h || !a) return;
       h.p++; a.p++; h.gf += m.hs; h.ga += m.as; a.gf += m.as; a.ga += m.hs;
       if (m.hs > m.as) { h.w++; h.pts += 3; a.l++; } else if (m.hs < m.as) { a.w++; a.pts += 3; h.l++; } else { h.d++; a.d++; h.pts++; a.pts++; }
@@ -45,13 +45,14 @@
   function pill(m) {
     if (m.status === 'live') return '<span class="pill live"><span class="dot pulse" style="background:#FFFFFF"></span>LIVE</span>';
     if (m.status === 'ft') return '<span class="pill ft">FULL TIME</span>';
+    if (m.status === 'tbc') return '<span class="pill ft">PLAYED</span>';
     return '<span class="pill">' + esc(t12(m.start)) + '</span>';
   }
   function sideHtml(m, which) {
     var slot = which === 'h' ? m.home : m.away, code = resolve(slot), score = which === 'h' ? m.hs : m.as;
     var w = winner(m), isWin = code && w === code;
     var left = code ? '<span class="code">' + esc(code) + '</span><span class="nm">' + esc((team(code) || {}).name || '') + '</span>' : '<span class="slot">' + esc(slotLabel(slot)) + '</span>';
-    var sc = m.status === 'upcoming' ? '<span class="score muted">–</span>' : '<span class="score">' + esc(score) + '</span>';
+    var sc = (m.status === 'upcoming' || m.status === 'tbc') ? '<span class="score muted">–</span>' : '<span class="score">' + esc(score) + '</span>';
     return '<div class="side' + (isWin && m.status === 'ft' ? ' win' : '') + '"><div class="t">' + left + '</div>' + sc + '</div>';
   }
   function matchHtml(m) {
