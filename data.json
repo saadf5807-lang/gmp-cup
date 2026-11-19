@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-19T23:59:20+03:00",
+  "updatedAt": "2026-11-20T00:32:49+03:00",
   "teams": [
     {
       "code": "M1",
@@ -184,6 +184,10 @@
   ],
   "updates": [
     {
+      "at": "2026-11-20T00:32:49+03:00",
+      "text": "Awards: Best Player goes to Baraa Sindi (M1 Hamstrings), and Best Goalkeeper goes to Ali Luay. Congratulations!"
+    },
+    {
       "at": "2026-11-19T23:59:20+03:00",
       "text": "🏆 M1 HAMSTRINGS ARE THE GMP CHAMPIONS! The Final ended 1–1 and M1 won on penalties against M4 HIVE FC. Congratulations, and thank you to every team for kicking off for prostate cancer awareness!"
     },
@@ -194,6 +198,17 @@
     {
       "at": "2026-11-19T22:37:48+03:00",
       "text": "Group stage done: M1 and M4 qualified from Group A, M2 and M3 from Group B. Gold Standard (Doctors) lost 3–0 and are out. Thanks for playing, doctors!"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Player",
+      "name": "Baraa Sindi",
+      "team": "M1"
+    },
+    {
+      "title": "Best Goalkeeper",
+      "name": "Ali Luay"
     }
   ]
 }

@@ -99,6 +99,7 @@
     html += '<section><h2>Group tables <small>Top 2 go through</small></h2><div class="tables">' + tableHtml('A') + tableHtml('B') + '</div><p class="note">Order: points, then goal difference, then goals scored. Green marks the qualifying places.</p></section>';
     html += '<section><h2>Stage 2 · Knockouts <small>9:00 – 11:00 PM</small></h2>' + venueHtml('barca') + '<div class="ko">' + ko.map(matchHtml).join('') + '</div>';
     html += '<div class="champ">' + trophy(40) + '<div><div class="eyebrow">GMP Champions</div><div class="n">' + (champ ? esc(champ) + ' · ' + esc((team(champ) || {}).name) : 'To be decided') + '</div></div></div></section>';
+    html += (S.awards && S.awards.length) ? '<section><h2>Awards</h2><div class="awards">' + S.awards.map(function (a) { var t = a.team ? team(a.team) : null; return '<div class="award"><div class="eyebrow">' + esc(a.title) + '</div><div class="an">' + esc(a.name) + '</div>' + (t ? '<div class="at">' + esc(t.code) + ' · ' + esc(t.name) + '</div>' : '') + '</div>'; }).join('') + '</div></section>' : '';
     html += '<section><h2>Teams &amp; captains</h2><div class="caps">' + S.teams.map(function (t) {
       return '<div class="cap"><span class="code" style="color:var(' + (t.group === 'A' ? '--accent' : '--groupB') + ')">' + esc(t.code) + '</span><span class="nm">' + esc(t.name) + '</span><span class="who">Captain: ' + esc(t.captain) + ' · Group ' + esc(t.group) + '</span></div>';
     }).join('') + '</div></section>';
