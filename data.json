@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-20T00:32:49+03:00",
+  "updatedAt": "2026-11-20T00:33:50+03:00",
   "teams": [
     {
       "code": "M1",
@@ -105,9 +105,9 @@
       "end": "19:30",
       "home": "M2",
       "away": "DR",
-      "hs": 0,
+      "hs": 2,
       "as": 0,
-      "status": "tbc"
+      "status": "ft"
     },
     {
       "id": "g5",
@@ -131,9 +131,9 @@
       "end": "20:40",
       "home": "M3",
       "away": "DR",
-      "hs": 0,
+      "hs": 3,
       "as": 0,
-      "status": "tbc"
+      "status": "ft"
     },
     {
       "id": "sf1",
