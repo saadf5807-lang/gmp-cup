@@ -26,7 +26,7 @@
     if (!m || m.status !== 'ft') return null;
     var h = resolve(m.home), a = resolve(m.away); if (!h || !a) return null;
     if (m.hs > m.as) return h; if (m.as > m.hs) return a;
-    if ((m.hp || 0) > (m.ap || 0)) return h; if ((m.ap || 0) > (m.hp || 0)) return a; return null;
+    if (m.pw) return m.pw; if ((m.hp || 0) > (m.ap || 0)) return h; if ((m.ap || 0) > (m.hp || 0)) return a; return null;
   }
   function resolve(slot) {
     var mm = /^([AB])([12])$/.exec(slot);
@@ -57,7 +57,7 @@
   }
   function matchHtml(m) {
     var tag = m.stage === 'group' ? '<span class="tag ' + m.group + '">GROUP ' + m.group + '</span>' : '<span class="tag K">' + esc(m.label).toUpperCase() + '</span>';
-    var pensLine = (m.stage === 'ko' && m.status === 'ft' && m.hs === m.as && (m.hp || m.ap)) ? '<div class="pens">Penalties ' + esc(m.hp || 0) + '–' + esc(m.ap || 0) + '</div>' : '';
+    var pensLine = (m.stage === 'ko' && m.status === 'ft' && m.hs === m.as && (m.hp || m.ap)) ? '<div class="pens">Penalties ' + esc(m.hp || 0) + '–' + esc(m.ap || 0) + '</div>' : ((m.stage === 'ko' && m.status === 'ft' && m.pw) ? '<div class="pens">' + esc(m.pw) + ' won on penalties</div>' : '');
     return '<article class="match' + (m.status === 'live' ? ' live' : '') + '"><div class="mhead"><span>' + esc(t12(m.start)) + ' – ' + esc(t12(m.end)) + '</span>' + tag + pill(m) + '</div>' + sideHtml(m, 'h') + sideHtml(m, 'a') + pensLine + '</article>';
   }
   function venueHtml(key) { var v = S.venues[key]; var link = v.map ? '<a href="' + esc(v.map) + '" target="_blank" rel="noopener" aria-label="Directions to ' + esc(v.en) + '">Directions ↗</a>' : ''; return '<div class="venue"><b>' + esc(v.en).toUpperCase() + '</b><span class="vr"><span dir="rtl" lang="ar">' + esc(v.ar) + '</span>' + link + '</span></div>'; }

@@ -1,6 +1,6 @@
 {
   "date": "Thursday 19 November",
-  "updatedAt": "2026-11-19T22:37:48+03:00",
+  "updatedAt": "2026-11-19T23:59:20+03:00",
   "teams": [
     {
       "code": "M1",
@@ -174,17 +174,18 @@
       "end": "22:50",
       "home": "W:sf1",
       "away": "W:sf2",
-      "hs": 0,
-      "as": 0,
+      "hs": 1,
+      "as": 1,
       "hp": 0,
       "ap": 0,
-      "status": "live"
+      "status": "ft",
+      "pw": "M1"
     }
   ],
   "updates": [
     {
-      "at": "2026-11-19T22:37:48+03:00",
-      "text": "FINAL is live now at Barcelona 3: M4 HIVE FC vs M1 Hamstrings!"
+      "at": "2026-11-19T23:59:20+03:00",
+      "text": "🏆 M1 HAMSTRINGS ARE THE GMP CHAMPIONS! The Final ended 1–1 and M1 won on penalties against M4 HIVE FC. Congratulations, and thank you to every team for kicking off for prostate cancer awareness!"
     },
     {
       "at": "2026-11-19T22:37:48+03:00",
